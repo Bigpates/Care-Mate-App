@@ -27,3 +27,14 @@ Include the following snippet in an Embed element and adjust the `src` URL to yo
 ```
 
 The iframe will render the chat UI contained in `client/index.html`.
+
+## React Chat Widget
+The `chat-widget` folder contains a modern React/Tailwind/Framer Motion implementation of the chat UI. Run the following to start it locally:
+
+```bash
+cd chat-widget
+npm install
+npm run dev
+```
+
+After running `npm run build`, the contents of `chat-widget/dist` can be deployed to any static host. The widget can be embedded in Webflow using an iframe pointing to the built `index.html`.
