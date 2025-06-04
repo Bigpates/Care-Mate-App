@@ -1,0 +1,10 @@
+{
+  "name": "care-mate-chat",
+  "version": "1.0.0",
+  "main": "netlify/functions/chat.js",
+  "type": "module",
+  "dependencies": {
+    "openai": "^4.0.0",
+    "node-fetch": "^3.0.0"
+  }
+}
