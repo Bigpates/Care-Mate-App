@@ -1,0 +1,29 @@
+{
+  "name": "care-mate-chatui",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "framer-motion": "^12.16.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/postcss": "^4.1.8",
+    "@types/react": "^19.0.24",
+    "@types/react-dom": "^19.0.11",
+    "@vitejs/plugin-react": "^4.4.1",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^4.1.8",
+    "typescript": "^5.2.2",
+    "vite": "^6.3.5"
+  }
+}
