@@ -22,7 +22,7 @@ export default function ChatWidget() {
 
   return (
     <motion.div
-      className="flex flex-col h-full w-full bg-white/30 dark:bg-gray-800/50 backdrop-blur-md rounded-2xl shadow-2xl p-4 text-gray-900 dark:text-white"
+      className="flex flex-col h-full w-full bg-white/30 dark:bg-gray-800/30 backdrop-blur-xl rounded-3xl shadow-2xl ring-1 ring-white/10 p-6 text-gray-900 dark:text-white"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -32,16 +32,16 @@ export default function ChatWidget() {
           <ChatBubble key={m.id} message={m} />
         ))}
       </div>
-      <form onSubmit={handleSubmit} className="mt-2 flex">
+      <form onSubmit={handleSubmit} className="mt-3 flex">
         <input
           ref={inputRef}
           type="text"
           placeholder="Type your message..."
-          className="flex-1 rounded-l-lg bg-white/80 dark:bg-gray-700/50 text-gray-900 dark:text-white px-3 py-2 focus:outline-none"
+          className="flex-1 rounded-l-lg bg-white/70 dark:bg-gray-700/40 text-gray-900 dark:text-white px-3 py-2 focus:outline-none"
         />
         <button
           type="submit"
-          className="rounded-r-lg bg-gradient-to-br from-primary-gradient-start to-primary-gradient-end text-gray-900 dark:text-white px-4 py-2 font-medium hover:opacity-90"
+          className="rounded-r-lg bg-gradient-to-br from-primary-gradient-start to-primary-gradient-end text-white px-5 py-2 font-semibold hover:opacity-90"
         >
           Send
         </button>

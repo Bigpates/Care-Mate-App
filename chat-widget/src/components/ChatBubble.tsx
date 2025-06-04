@@ -15,10 +15,10 @@ export default function ChatBubble({ message }: Props) {
       className={`my-2 flex ${isUser ? 'justify-end' : 'justify-start'}`}
     >
       <div
-        className={`max-w-[70%] rounded-xl px-4 py-2 text-sm backdrop-blur-xs shadow-md ${
+        className={`max-w-[70%] rounded-2xl px-4 py-2 text-sm backdrop-blur-xs shadow-md ${
           isUser
-            ? 'bg-gradient-to-br from-primary-gradient-start to-primary-gradient-end text-gray-900 dark:text-white'
-            : 'bg-white/70 dark:bg-gray-700/50 text-gray-900 dark:text-white'
+            ? 'bg-gradient-to-br from-user-gradient-start to-user-gradient-end text-white'
+            : 'bg-gradient-to-br from-ai-gradient-start to-ai-gradient-end text-white'
         }`}
       >
         {message.content}

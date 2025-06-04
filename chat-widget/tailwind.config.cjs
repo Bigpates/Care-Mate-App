@@ -7,16 +7,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary-gradient-start': '#8f5cff',
-        'primary-gradient-end': '#3b82f6',
-        'dark-gradient-start': '#1f2937',
-        'dark-gradient-end': '#111827',
+        'primary-gradient-start': '#0ea5e9',
+        'primary-gradient-end': '#6366f1',
+        'dark-gradient-start': '#0f172a',
+        'dark-gradient-end': '#020617',
+        'user-gradient-start': '#40c9ff',
+        'user-gradient-end': '#e81cff',
+        'ai-gradient-start': '#8e2de2',
+        'ai-gradient-end': '#4a00e0',
       },
       fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+        sans: ['Space Grotesk', 'Inter', 'ui-sans-serif', 'system-ui'],
       },
       backdropBlur: {
         xs: '2px',
+        xl: '20px',
       },
     },
   },

@@ -15,8 +15,10 @@ export default function App() {
 
   return (
     <div
-      className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-primary-gradient-start to-primary-gradient-end dark:from-dark-gradient-start dark:to-dark-gradient-end"
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-primary-gradient-start to-primary-gradient-end dark:from-dark-gradient-start dark:to-dark-gradient-end"
     >
+      <div className="pointer-events-none absolute -top-20 -left-20 h-96 w-96 rounded-full bg-user-gradient-start opacity-40 blur-[120px]" />
+      <div className="pointer-events-none absolute bottom-0 right-0 h-[28rem] w-[28rem] rounded-full bg-ai-gradient-end opacity-30 blur-[160px]" />
       <button
         onClick={() => setDarkMode((d) => !d)}
         className="absolute top-4 right-4 px-3 py-1 rounded-md text-sm backdrop-blur-md bg-white/20 text-white hover:bg-white/30"
